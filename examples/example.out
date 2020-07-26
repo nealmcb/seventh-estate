@@ -10,3 +10,48 @@ cp one-trustee-poll.yaml example.yaml
 cp roster.csv example-roster.csv
 
 recordstep init
+[readme+debug a2c4857] init
+ 3 files changed, 1019 insertions(+)
+ create mode 100644 examples/example-roster.csv
+ create mode 100644 examples/example.out
+ create mode 100644 examples/example.yaml
+${SEVENTH_ESTATE_BINARY} new --config example.yaml
+DEBUG - KDF Result: 1a6674f6fba74a346d7756308c2793ead0083e76d1a0c587226419edc0bc9d8f
+DEBUG - Authenticated Data: alice@example.com-cd0jpqQBdxCF7VhC92bZyjHe8IiCJdV05uadoWxgSLk=
+DEBUG - Unencrypted Data:   0000cd00c400b600120041005300bc00930091001900b00037006500f9005f00ee0013009f00b400a5006600390095000d0028008500f80080004f003e001700ea00
+DEBUG - Encrypted Data:     e80012dffa3695f2b410bf9477d26d75dc59a9e6ed074694ae3840196926daa86b459f6270b0f46180c0c8a647a8418a05cf8bbb81a2cd71924b2eef94f9ed3de969
+DEBUG - Tag:                a68c8aee71c2274f1a1e0b8293ebc643
+DEBUG - Authenticated Data: OneTrusteePoll
+DEBUG - Unencrypted Data:   
+DEBUG - Encrypted Data:     
+DEBUG - Tag:                9d4d69d3cef9a0e0586dfab3a7d15665
+DEBUG - Authenticated Data: qpgqUsIlGUuEAtbVlLWd5k05wAmYxFgIykzQh10rXEk=
+DEBUG - Unencrypted Data:   
+DEBUG - Encrypted Data:     
+DEBUG - Tag:                2ea7ac044ae4c77fc4e3f0de5c9fdbba
+DEBUG - Authenticated Data: 
+DEBUG - Unencrypted Data:   ---
+poll_state:
+  announced: false
+  roster_committed: false
+  columns_committed: false
+  summands_committed: false
+  summands_drawn: false
+  ceremony_conducted: false
+  votes_committed: false
+  summands_revealed: false
+  roster_revealed: false
+  columns_revealed: false
+signing_key: HaHKovJzK+7Qe5gF9xfFBG7do41VkcnYKzhBvuoH4XI=
+num_ballots: 100
+num_decoys: 10
+voter_roster: ~
+voter_roster_size: 0
+voter_privacy: true
+drawn_summands_seed: ~
+audited_columns_seed: ~
+audited_ballots: ~
+votes: ~
+DEBUG - Encrypted Data:     5d349ce9834b506670361ae51018cba4816b0cca973a6e2b1e743d4017f50fbfeb28bc35b242749a3b5dcce5457819319eb8f08bfb764795ce7c95c6b9550e7c6540f26595a3aecb8814007ec7f8b0cb2a218cc8fdef521eb17fce58b53c584e0a13ccd467351ea2b501480497cf5f79c64351b782cf655cce1c990e64b01afaf255dbc02e2f0094d101f841056814bfe884ca2ecdcefcbc8b7f25d6a5b8f978aa84e751d95c27bc5702227da72de0efeb23b62a1aea22ee281f23d5fe3da169b40c2a8c7867b2fa91680b89ffabe9c2c03bac314c32f4e46c4558dde9e6f20df033b58697f8edb891e88e9036018d9a8ed54035b0f33ccac37e1994f3ac1939e730656fe2226693ac8745ea65d18f29c0beb274aeb536d43237caa96a6f9daa16cfcbccae97f88f5bba42c1a608699bdaae65c74230b159fa2b4ab1c0d0555f60cc1196d92d0c26c3e51e94a894b5fa8451a93b0ccfd2a20ff75b9ac955ccb65c4b26f3062dc6a42bbd3caf578a527e479a5a7512de5947eeb66b36931e3e8a5115295c26ce2ee9f5ad43163074b199bae04a02e580a1867173d586390f2e81568baaeb6cf5e8d97fee9aa7cdd6b6937de84bb1390c5717a94d6272777dcfd82e644f63804c4c6cf42048c0fe9e074f2a64987ae6cab20c4aedf4efaa4ba2e5c2bb70947c6c56d32a438e4a
+DEBUG - Tag:                2c194c83f22f5312f4a1dc613eb7585a
+recordstep new
